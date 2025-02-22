@@ -30,8 +30,7 @@ function get_random_quote($filename = 'quotes.json', $language = 'en') {
     }
 }
 
-// Получаем язык из параметра запроса (например, get_random_quote.php?lang=fr)
-$language = isset($_GET['lang']) ? $_GET['lang'] : 'en';  // Язык по умолчанию - английский
+$language = isset($_GET['lang']) ? $_GET['lang'] : 'en';
 
 echo get_random_quote('quotes.json', $language);
 ?>
