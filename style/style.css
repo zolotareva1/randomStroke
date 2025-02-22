@@ -93,11 +93,22 @@ p {
 }
 
 @media screen and (max-width: 600px){
-  body{
-      overflow-y: auto;
+    body{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    overflow:auto;
   }
-    .quote-container {
-        width: 90vw;
-        padding: 50px 20px;
-    }
+  
+  .quote-container {
+    width: 90vw;
+    padding: 50px 20px;
+  }
+  
+  .quote-container p{
+  	max-height: 30vh;
+    overflow-y: scroll;
+  }
 }
